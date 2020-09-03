@@ -1,4 +1,4 @@
-trigger:
+  trigger:
   - '*'
   
   variables:
@@ -94,3 +94,4 @@ trigger:
                 azureSubscription: 'Resource Manager - Tailspin - Space Game'
                 appName: '$(WebAppNameDev)'
                 package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
+                appType: webApp
